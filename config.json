@@ -1,0 +1,12 @@
+{
+	"Bind": "0.0.0.0:8000",
+	"Hostname": "box1",
+	"NetworkRange": "172.17.0.0/24",
+	"NetowrkCaptureInterval": "2s",
+	"RedisDb": "172.16.10.10:6379",
+	"NetworkInterface": "eth0",
+	"WhiteList": [
+		"1.1.1.1",
+		"2.2.2.2"
+	]
+}
