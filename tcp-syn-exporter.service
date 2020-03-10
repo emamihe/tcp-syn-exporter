@@ -3,7 +3,7 @@ Description=tcp syn exporter
 After=network.target
 
 [Service]
-ExecStart=/opt/tcp-syn-exporter/tcp-sync-exporter.py -c /opt/tcp-syn-exporter/config.json
+ExecStart=/opt/tcp-syn-exporter/tcp-syn-exporter.py -c /opt/tcp-syn-exporter/config.json
 ExecStop=kill -9 $MAINPID
 Restart=always
 
