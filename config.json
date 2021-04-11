@@ -4,6 +4,7 @@
 	"NetworkRange": "172.17.0.0/24",
 	"NetowrkCaptureInterval": "2s",
 	"RedisDb": "172.16.10.10:6379",
+	"RedisDbName": "1",
 	"NetworkInterface": "eth0",
 	"WhiteList": [
 		"1.1.1.1",

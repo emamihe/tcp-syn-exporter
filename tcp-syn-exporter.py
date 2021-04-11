@@ -43,7 +43,8 @@ def worker(collector):
         
         redisHost, redisPort=config["RedisDb"].split(":")
         hostname=config["Hostname"]
-        rclient=redis.Redis(host=redisHost, port=int(redisPort))
+        RedisDbName=config["RedisDbName"]
+        rclient=redis.Redis(host=redisHost, port=int(redisPort), db=int(RedisDbName))
         rclient.set(hostname, json.dumps(ips))
         rclient.expire(hostname, 60)
         boxes=rclient.keys("*")
