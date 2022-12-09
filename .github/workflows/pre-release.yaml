@@ -15,6 +15,11 @@ jobs:
       - name: "Build & test"
         run: |
           echo "done!"
+          
+      - name: checkout
+        uses: actions/checkout@v3.1.0
+        with:
+          fetch-depth: 0
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
